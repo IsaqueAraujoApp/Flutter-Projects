@@ -1,33 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9d56cfd-d680-4e1e-91d5-10cb75fb8f28" name="Default Changelist" comment="">
+    <list default="true" id="f1cabe86-4bf9-4c55-be07-80df60e19d66" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../AgendaContatos/.idea/codeStyles/Project.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../AgendaContatos/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../AgendaContatos/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../AgendaContatos/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../AgendaContatos/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ChatOnline/.idea/codeStyles/Project.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ChatOnline/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ChatOnline/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ChatOnline/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ChatOnline/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConversorMoedas/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConversorMoedas/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConversorMoedas/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConversorMoedas/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ListaTarefas/.idea/codeStyles/Project.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ListaTarefas/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ListaTarefas/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ListaTarefas/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AgendaContatos/agenda_contatos/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../AgendaContatos/agenda_contatos/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/BuscadorGifs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BuscadorGifs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +29,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="-164848916">
+    <session id="-109127308">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="1" />
@@ -59,7 +52,7 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/buscador_gifs/lib/main.dart">
+        <entry file="file://$PROJECT_DIR$/conversor_moedas/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <folding>
@@ -85,30 +78,30 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="BuscadorGifs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BuscadorGifs" type="462c0819:PsiDirectoryNode" />
+              <item name="ConversorMoedas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConversorMoedas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BuscadorGifs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BuscadorGifs" type="462c0819:PsiDirectoryNode" />
-              <item name="buscador_gifs" type="462c0819:PsiDirectoryNode" />
+              <item name="ConversorMoedas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConversorMoedas" type="462c0819:PsiDirectoryNode" />
+              <item name="conversor_moedas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BuscadorGifs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BuscadorGifs" type="462c0819:PsiDirectoryNode" />
-              <item name="buscador_gifs" type="462c0819:PsiDirectoryNode" />
+              <item name="ConversorMoedas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConversorMoedas" type="462c0819:PsiDirectoryNode" />
+              <item name="conversor_moedas" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -135,7 +128,7 @@
   </component>
   <component name="RunManager">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/buscador_gifs/lib/main.dart" />
+      <option name="filePath" value="$PROJECT_DIR$/conversor_moedas/lib/main.dart" />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -149,11 +142,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a9d56cfd-d680-4e1e-91d5-10cb75fb8f28" name="Default Changelist" comment="" />
-      <created>1548892329577</created>
+      <changelist id="f1cabe86-4bf9-4c55-be07-80df60e19d66" name="Default Changelist" comment="" />
+      <created>1548892150155</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1548892329577</updated>
+      <updated>1548892150155</updated>
     </task>
     <servers />
   </component>
@@ -187,7 +180,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/buscador_gifs/lib/main.dart">
+    <entry file="file://$PROJECT_DIR$/conversor_moedas/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>

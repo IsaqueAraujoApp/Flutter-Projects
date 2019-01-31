@@ -3,8 +3,8 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <excludeFolder url="file://$MODULE_DIR$/buscador_gifs/.pub" />
-      <excludeFolder url="file://$MODULE_DIR$/buscador_gifs/build" />
+      <excludeFolder url="file://$MODULE_DIR$/chat_online/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/chat_online/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
