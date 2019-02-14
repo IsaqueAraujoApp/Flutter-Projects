@@ -2,21 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10cc05fb-3057-49f7-a6c3-c23d7ee6d6b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../AgendaContatos/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AgendaContatos/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AgendaContatos/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AgendaContatos/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AgendaContatos/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ChatOnline/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ChatOnline/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ChatOnline/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ChatOnline/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ChatOnline/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AgendaContatos/agenda_contatos/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../AgendaContatos/agenda_contatos/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AgendaContatos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AgendaContatos/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/.idea/ChatOnline.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/.idea/libraries/Dart_SDK.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/chat_online/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatOnline/chat_online/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/chat_online/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatOnline/chat_online/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/chat_online/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatOnline/chat_online/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/chat_online/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatOnline/chat_online/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/chat_online/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatOnline/chat_online/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/chat_online/test/widget_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConversorMoedas/.idea/ConversorMoedas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConversorMoedas/.idea/ConversorMoedas.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConversorMoedas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConversorMoedas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ListaTarefas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ListaTarefas.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,9 +32,11 @@
     <session id="1434193552">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -46,11 +52,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lista_tarefas/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="169">
+              <caret line="50" column="19" lean-forward="true" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -81,23 +88,12 @@
               <item name="ListaTarefas" type="b2602c69:ProjectViewProjectNode" />
               <item name="ListaTarefas" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ListaTarefas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ListaTarefas" type="462c0819:PsiDirectoryNode" />
-              <item name="lista_tarefas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ListaTarefas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ListaTarefas" type="462c0819:PsiDirectoryNode" />
-              <item name="lista_tarefas" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -156,30 +152,40 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" visible="true" weight="0.3295302" />
-      <window_info id="Structure" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info anchor="bottom" id="Dart Analysis" weight="0.32907802" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TODO" />
-      <window_info anchor="bottom" id="Run" weight="0.32907802" />
-      <window_info anchor="bottom" id="Debug" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Flutter Inspector" />
-      <window_info anchor="right" id="Flutter Outline" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.33892617" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="0" />
+      <window_info anchor="bottom" id="Dart Analysis" order="1" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.32907802" />
+      <window_info anchor="bottom" id="TODO" order="3" weight="0.32907802" />
+      <window_info anchor="bottom" id="Debug" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50067115" side_tool="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Flutter Performance" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32907802" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Flutter Inspector" order="2" />
+      <window_info anchor="right" id="Flutter Outline" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -188,7 +194,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lista_tarefas/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="169">
+          <caret line="50" column="19" lean-forward="true" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>

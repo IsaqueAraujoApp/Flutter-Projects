@@ -2,25 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f2691b1-3f51-4a34-81bb-1f61cd1a8f65" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ChatOnline/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ChatOnline/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ChatOnline/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ChatOnline/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ChatOnline/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConversorMoedas/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConversorMoedas/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConversorMoedas/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConversorMoedas/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ListaTarefas/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ListaTarefas/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ListaTarefas/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ListaTarefas/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agenda_contatos/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/agenda_contatos/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/.idea/ChatOnline.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/.idea/libraries/Dart_SDK.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/chat_online/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatOnline/chat_online/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/chat_online/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatOnline/chat_online/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/chat_online/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatOnline/chat_online/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/chat_online/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatOnline/chat_online/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/chat_online/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatOnline/chat_online/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatOnline/chat_online/test/widget_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConversorMoedas/.idea/ConversorMoedas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConversorMoedas/.idea/ConversorMoedas.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConversorMoedas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConversorMoedas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListaTarefas/.idea/ListaTarefas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ListaTarefas/.idea/ListaTarefas.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListaTarefas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ListaTarefas/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,10 +31,11 @@
     <session id="-1727691855">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -55,7 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/agenda_contatos/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="80">
+              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -79,6 +80,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -102,7 +104,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -111,7 +112,7 @@
     <property name="android.sdk.path" value="C:/ANDROIDSDK" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ListaTarefas" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -186,7 +187,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/agenda_contatos/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="80">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>

@@ -1,111 +1,248 @@
+import 'dart:io';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  Firestore.instance
+      .collection("teste")
+      .document("teste")
+      .setData({"teste": "teste"});
+  runApp(MyApp());
+}
 
+final ThemeData kIOSTheme = ThemeData(
+  primarySwatch: Colors.orange,
+  primaryColor: Colors.grey[100],
+  primaryColorBrightness: Brightness.light,
+);
+final ThemeData kANDROIDTheme = ThemeData(
+  primarySwatch: Colors.purple,
+  accentColor: Colors.orangeAccent[400],
+);
+final googleSignIn = GoogleSignIn();
+final auth = FirebaseAuth.instance;
+Future<Null> _ensureLoggedIn() async{
+  GoogleSignInAccount user = googleSignIn.currentUser;
+  if(user == null){
+    user = await googleSignIn.signInSilently();
+  }
+  if(user == null){
+    googleSignIn.signIn();
+  }
+  if(await auth.currentUser() == null){
+    GoogleSignInAuthentication credentials = await googleSignIn.currentUser.authentication;
+    await auth.signInWithGoogle(
+        idToken: credentials.idToken,
+        accessToken: credentials.accessToken);
+  }
+}
+_handleSubmitted(String text) async {
+  await _ensureLoggedIn();
+  _sendMessage(text: text);
+}
+void _sendMessage({String text, String imgUrl}){
+  Firestore.instance.collection("messages").add(
+    {
+      "text": text,
+      "imgUrl": imgUrl,
+      "senderName": googleSignIn.currentUser.displayName,
+      "senderPhotoUrl": googleSignIn.currentUser.photoUrl
+    }
+  );
+}
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      title: "Chat App",
+      debugShowCheckedModeBanner: false,
+      theme: Theme.of(context).platform == TargetPlatform.iOS
+          ? kIOSTheme
+          : kANDROIDTheme,
+      home: ChatScreen(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
-  final String title;
-
+class ChatScreen extends StatefulWidget {
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _ChatScreenState createState() => _ChatScreenState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
-  }
-
+class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
-    return Scaffold(
-      appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          // Column is also layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Invoke "debug painting" (press "p" in the console, choose the
-          // "Toggle Debug Paint" action from the Flutter Inspector in Android
-          // Studio, or the "Toggle Debug Paint" command in Visual Studio Code)
-          // to see the wireframe for each widget.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
+    return SafeArea(
+      bottom: false,
+      top: false,
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text("Chat App"),
+          centerTitle: true,
+          elevation:
+              Theme.of(context).platform == TargetPlatform.iOS ? 0.0 : 4.0,
+        ),
+        body: Column(
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+            Expanded(
+              child: StreamBuilder(
+                stream: Firestore.instance.collection("messages").snapshots(),
+                  builder: (context, snapshot){
+                  switch(snapshot.connectionState){
+                    case ConnectionState.none:
+                    case ConnectionState.waiting:
+                      return Center(
+                        child: CircularProgressIndicator(),
+                      );
+                    default:
+                      return ListView.builder(
+                        reverse: true,
+                          itemCount: snapshot.data.documents.length,
+                          itemBuilder: (context, index){
+                          List r = snapshot.data.documents.reversed.toList();
+                          return ChatMessage(r[index].data);
+                          });
+                  }
+                  }),
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
+            Divider(
+              height: 1.0,
             ),
+            Container(
+              decoration: BoxDecoration(
+                color: Theme.of(context).cardColor,
+              ),
+              child: TextComposer(),
+            )
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
+
+class TextComposer extends StatefulWidget {
+  @override
+  _TextComposerState createState() => _TextComposerState();
+}
+
+class _TextComposerState extends State<TextComposer> {
+  final _textController = TextEditingController();
+  bool _isComposed = false;
+
+  void _reset(){
+    _textController.clear();
+    setState(() {
+      _isComposed = false;
+    });
+  }
+  @override
+  Widget build(BuildContext context) {
+    return IconTheme(
+      data: IconThemeData(
+        color: Theme.of(context).accentColor,
+      ),
+      child: Container(
+        margin: const EdgeInsets.symmetric(horizontal: 8.0),
+        decoration: Theme.of(context).platform == TargetPlatform.iOS
+            ? BoxDecoration(
+                border: Border(top: BorderSide(color: Colors.grey[200])))
+            : null,
+        child: Row(
+          children: <Widget>[
+            Container(
+              child:
+                  IconButton(icon: Icon(Icons.photo_camera), onPressed: () async {
+                    await _ensureLoggedIn();
+                    File imgFile = await ImagePicker.pickImage(source: ImageSource.gallery);
+                    if(imgFile == null)return;
+                    StorageUploadTask task = FirebaseStorage.instance.ref().
+                    child(googleSignIn.currentUser.id.toString() +
+                        DateTime.now().millisecondsSinceEpoch.toString()).putFile(imgFile);
+                    StorageTaskSnapshot taskSnapshot = await task.onComplete;
+                    String url = await taskSnapshot.ref.getDownloadURL();
+                    _sendMessage(imgUrl: url);
+                  }),
+            ),
+            Expanded(
+              child: TextField(
+                controller: _textController,
+                decoration:
+                    InputDecoration.collapsed(hintText: "Enviar uma mensagem"),
+                onChanged: (text) {
+                  setState(() {
+                    _isComposed = text.length > 0;
+                  });
+                },
+                onSubmitted: (text){
+                  _handleSubmitted(text);
+                  _reset();
+                },
+              ),
+            ),
+            Container(
+                margin: const EdgeInsets.symmetric(horizontal: 4.0),
+                child: Theme.of(context).platform == TargetPlatform.iOS
+                    ? CupertinoButton(
+                        child: Text("Enviar"),
+                        onPressed: _isComposed ? () {
+                          _handleSubmitted(_textController.text);
+                          _reset();
+                        } : null,
+                      )
+                    : IconButton(
+                        icon: Icon(Icons.send),
+                        onPressed: _isComposed ? () {
+                          _handleSubmitted(_textController.text);
+                          _reset();
+                        } : null,
+                      ))
+          ],
+        ),
+      ),
+    );
+  }
+}
+class ChatMessage extends StatelessWidget {
+  final Map<String, dynamic> data;
+  ChatMessage(this.data);
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Container(
+            margin: const EdgeInsets.only(right: 10.0),
+            child: CircleAvatar(
+              backgroundImage: NetworkImage(data["senderPhotoUrl"]),
+            ),
+          ),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(data["senderName"],
+                style: Theme.of(context).textTheme.subhead,
+                ),
+                Container(
+                  margin: const EdgeInsets.only(top: 5.0),
+                  child: data["imgUrl"] != null ?
+                      Image.network(data["imgUrl"], width: 250.0,):
+                      Text(data["text"]),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
