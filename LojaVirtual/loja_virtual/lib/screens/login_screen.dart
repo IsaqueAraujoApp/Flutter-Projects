@@ -120,7 +120,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       model.signIn(
                         email: _emailController.text,
                         pass: _passController.text,
-                        onSucess: _onSucess,
+                        onSuccess: _onSucess,
                         onFail: _onFail,
                       );
                     },

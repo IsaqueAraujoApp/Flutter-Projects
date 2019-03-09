@@ -108,7 +108,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         model.signUp(
                             userData: userData,
                             pass: _passController.text,
-                            onSucess: _onSucess,
+                            onSuccess: _onSucess,
                             onFail: _onFail);
                       }
                     },
